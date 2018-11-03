@@ -1,2 +1,1 @@
-# granblue-chara-image
-name as 
+# granblue-chara-image 
