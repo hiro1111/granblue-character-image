@@ -1,0 +1,47 @@
+<html>
+<head>
+    <meta charset="SHIFT-JIS">
+    <title>グラブル画像</title>
+</head>
+ 
+<body>
+    <form>
+        <label for="ID">数字: </label>
+        <input type="number" id="ID" value="">
+	<input type="reset" name="reset" value="リセット" />
+	例 3030182000 (ルリア) 3030008000 (ラカム)
+    </form>
+	<button onclick="a()">見る</button>
+	<br/>
+	<img id="image1">
+	<img id="image2">
+	<img id="image3">
+	<img id="imagep">
+</body>
+ 
+<script>
+function a() {
+ 
+    // IDとURL
+    var ID = document.getElementById("ID").value;
+    var tatie = "http://game-a1.granbluefantasy.jp/assets/img/sp/assets/npc/my/"
+    var story = "http://game-a1.granbluefantasy.jp/assets/img/sp/quest/scene/character/body/"
+    var text1 = "_01.png"
+    var text2 = "_02.png"
+    var text3 = "_03.png"
+    var textp = ".png"
+    // 足す
+    var sum1 = tatie + ID + text1;
+    var sum2 = tatie + ID + text2;
+    var sum3 = tatie + ID + text3;
+    var sump = story + ID + textp;
+ 
+	document.getElementById("image1").src = sum1;
+	document.getElementById("image2").src = sum2;
+	document.getElementById("image3").src = sum3;
+	document.getElementById("imagep").src = sump;
+}
+
+</script>
+ 
+</html>
