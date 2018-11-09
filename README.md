@@ -1,2 +1,2 @@
-# granblue-chara-image 
-キャラIDを入力するとグラブルキャラの立ち絵を見られるよ
+### granblue-chara-image 
+キャラIDを入力すると立ち絵を見られるよ
