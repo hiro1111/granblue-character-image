@@ -1,0 +1,49 @@
+<html>
+
+<select id="rare">
+    <option value="3040">SSR</option>
+    <option value="3030">SR</option>
+    <option value="3020">R</option>
+</select>
+
+<form>
+    <label for="ID">number(1~300) </label>
+    <input type="number" id="ID" value="1" min="1" max="300">
+    <input type="reset" name="reset" value="reset" />
+</form>
+ ex) SR 182 (Lyria) SR 8 (Rackam) SSR 87(Rosamia)
+<button onclick="a()">Get it</button>
+<br/>
+<img id="image1">
+<img id="image2">
+<img id="image3">
+<img id="imagep">
+
+ 
+<script>
+function a() {
+ 
+    // IDとURLとか
+    var ID_old = document.getElementById("ID").value;
+    var rare = document.getElementById("rare").value;
+    var tatie = "http://game-a1.granbluefantasy.jp/assets/img/sp/assets/npc/my/"
+    var story = "http://game-a1.granbluefantasy.jp/assets/img/sp/quest/scene/character/body/"
+    var text1 = "_01.png"
+    var text2 = "_02.png"
+    var text3 = "_03.png"
+    var textp = ".png"
+    // 足す
+    ID_old = ( '000' + ID_old ).slice( -3 );
+    var ID = rare + ID_old + "000"
+    var sum1 = tatie + ID + text1;
+    var sum2 = tatie + ID + text2;
+    var sum3 = tatie + ID + text3;
+    var sump = story + ID + textp;
+ 
+	document.getElementById("image1").src = sum1;
+	document.getElementById("image2").src = sum2;
+	document.getElementById("image3").src = sum3;
+	document.getElementById("imagep").src = sump;
+}
+</script>
+</html>
