@@ -32,6 +32,7 @@ function watch_image() {
     var ID_old = document.getElementById("ID").value;
     var rare = document.getElementById("rare").value;
     var tatie = "http://prd-game-a-granbluefantasy.akamaized.net/assets/img/sp/assets/npc/my/"
+    var zoom = "http://prd-game-a-granbluefantasy.akamaized.net/assets/img/sp/assets/npc/zoom/"
     var story = "http://prd-game-a-granbluefantasy.akamaized.net/assets/img/sp/quest/scene/character/body/"
     var text1 = "_01.png"
     var text2 = "_02.png"
@@ -44,11 +45,17 @@ function watch_image() {
     var sum2 = tatie + ID + text2;
     var sum3 = tatie + ID + text3;
     var sump = story + ID + textp;
+    var sum4 = zoom + ID + text1;
+    var sum5 = zoom + ID + text2;
+    var sum6 = zoom + ID + text2;
  
 	document.getElementById("image1").src = sum1;
 	document.getElementById("image2").src = sum2;
 	document.getElementById("image3").src = sum3;
 	document.getElementById("imagep").src = sump;
+	document.getElementById("image4").src = sum4;
+	document.getElementById("image5").src = sum5;
+	document.getElementById("image6").src = sum6;
 }
 </script>
 </html>
